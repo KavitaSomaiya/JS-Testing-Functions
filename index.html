@@ -34,44 +34,47 @@
   
   <body>
     
-      <input id="inputId" onkeydown="eFunc();"/>
+      <input id="inputId"/>
       <input type='submit' value="Submit" id="submitId" onclick="testFunc();" />
       <p id="pRenderId"></p>
 
 
     <script>
 
-    
-    function eFunc() {
-      $('#inputId').keydown(function(e){
-       if (e.which === 13) {
-        $('#submitId').click();
-       }
-      })
-}
-    
-  
-      function testFunc(){
-        var x = document.querySelector('#inputId').value,
-            text=''
-            
-        if (isNaN(x) || x<1 || x>9999) {
-          text ="Invalid"
-        } else {
-          text = "Valid."
+    const inputVar = document.querySelector('#inputId');
+    inputVar.onkeydown = inputFunc;
+    function inputFunc() {
+      let z = document.querySelector('#inputId');
+      z.addEventListener('keydown', function(e) {
+        if (e.which === 13) {
+          testFunc();
         }
-        document.querySelector('#pRenderId').innerHTML = text
+      })   
+    }
+
+
+    function testFunc(){
+      var x = document.querySelector('#inputId').value,
+          text=''
+            
+      if (isNaN(x) || x<1 || x>9999) {
+        text ="Invalid"
+      } else {
+        text = "Valid."
       }
+      document.querySelector('#pRenderId').innerHTML = text
+    }
 
-       
-
-        //$('#input').keydown(function(e){
-       // if (e.which === 13) {
-       //   $('#submitId').click();
-       // }
-      //})
+     
     
-    //}  
+    //function eFunc() {
+      //$('#inputId').keydown(function(e){
+       //if (e.which === 13) {
+        //$('#submitId').click();
+       //}
+      //})
+
+    
 
     
     </script>
