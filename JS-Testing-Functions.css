@@ -1,0 +1,134 @@
+
+
+/*------------------ XS / MOBILE PORTRAIT ---------------------*/
+@media only screen and (max-width: 575.98px) and (-webkit-min-device-pixel-ratio: 1){[class*="col-"] {width: 100%;}}
+
+
+/*------------------ SM / MOBILE LANDSCAPE ----------------------------*/
+@media only screen and (min-width: 576px) and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 1){[class*="col-"] {width: 100%;}}
+
+
+/*------------------ MD / TABLETS PORTRAIT ----------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991.98px) and (-webkit-min-device-pixel-ratio: 1){}
+
+
+/*------------------ LG / IPAD(s) - DESKTOPS - LAPTOPS ----------------------------*/
+@media only screen and (min-width: 992px) and (max-width: 1199.98px)and (-webkit-min-device-pixel-ratio: 1){}
+
+
+/*------------------------------- XL / LARGE DESKTOPS - LAPTOPS ----------------------------*/
+@media only screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1){}
+
+/*--------------------------------------------------------------------------------------------*/
+
+*, :after, :before{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.selector-for-some-widget{
+    box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+}
+html {
+    font-family: 'Libre Franklin', sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+*, html, body{
+    font-size: 13.5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: none;
+    line-height: 1.7em;
+    letter-spacing: .04ch;
+    color: #767676;
+    color: #222;
+}
+html, body{
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.container{
+    width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+    @media (min-width:576px){.container{max-width:540px}}
+    @media (min-width:768px){.container{max-width:720px}}
+    @media (min-width:992px){.container{max-width:960px}}
+    @media (min-width:1200px){.container{max-width:1140px}
+}
+.cust-container-2{
+    width:100%;padding-right:25px;padding-left:25px;margin-right:auto;margin-left:auto}
+    @media (min-width:576px){.container{max-width:540px}}
+    @media (min-width:768px){.container{max-width:720px}}
+    @media (min-width:992px){.container{max-width:960px}}
+    @media (min-width:1200px){.container{max-width:1140px}
+}
+.row{   
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.cust-container{
+    position:relative;
+    padding: 0 15px;
+    margin: 0 auto; 
+    height: auto;
+    width: 1300px;
+    max-width: 100%;
+    clear:both;
+}
+
+/* -------- CUSTOMIZED GENERAL CLASSES ------------------- */
+
+.cust-ouline-0{
+    outline: 0;
+}
+.cust-bg-transparent{
+    background: transparent;
+}
+.cust-bg-black{
+    background: #000000!important;
+}
+.cust-overflow-hidden{
+    overflow: hidden;
+}
+.cust-overflow-auto{
+    overflow: auto;
+}
+.cust-po-rel{
+    position: relative;
+}
+.cust-po-abs{
+    position: absolute;
+}
+.cust-vertical-align-middle{
+    vertical-align: middle;
+}
+.cust-text-white{
+    color: #ffffff;
+}
+.cust-text-black{
+    color: #000000;
+}
+.desk-my-one{
+    margin-top: 49px;
+    margin-bottom: 49px;
+}
+
+.bg-222222{
+    background: #222222;
+}
+.width-50-img{
+    width: 100%;
+    height: auto;
+}
+
